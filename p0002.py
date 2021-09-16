@@ -8,4 +8,5 @@ def fib(n=int(4e6)):
         if b % 2 == 0:
             t += b
 
+
 print(fib())
