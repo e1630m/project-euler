@@ -9,6 +9,7 @@ def sieve(comp={}, i=2):
             del comp[i]
         i += 1
 
+
 sum_primes = 0
 limit = int(2e6)
 for p in sieve():

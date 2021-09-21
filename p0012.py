@@ -27,10 +27,12 @@ def count_divisors(factors):
     return prod
 
 
-get_tnum = lambda x: (x**2 + x) // 2
+def get_tnum(n):
+    return (n**2 + n) // 2
+
+
 memo, i, triangle = {}, 1, get_tnum(1)
 while count_divisors(get_factors(triangle, memo)) < 500:
     i += 1
     triangle = get_tnum(i)
 print(get_tnum(i))
-    
